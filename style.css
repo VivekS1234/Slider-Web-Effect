@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.nav{
+    position: absolute;
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50vw;
+    color: rgb(255, 255, 255);
+}
+.nav i{
+    font-size: 3vh;
+    padding: 20px 20px;
+    background-color: rgba(120, 120, 120, 0.178);
+    border-radius: 50%;
+}
+.inComing{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+.inComing img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
