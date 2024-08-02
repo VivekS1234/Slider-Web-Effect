@@ -1,3 +1,5 @@
-// document.querySelector('.parent i').addEventListener('click', function(){
-//     i.style.scale = "1.02"
-// })
+let icon = document.querySelector('.parent i');
+
+icon.addEventListener('click', function(){
+    icon.style.scale = "1.08"
+})
