@@ -98,7 +98,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8vw;
+    gap: 4vw;
     background-color: rgba(0, 0, 0, 0.125);
     border-radius: 10px;
 }
