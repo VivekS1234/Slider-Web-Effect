@@ -7,6 +7,7 @@ html,
 body{
     height: 100%;
     width: 100%;
+    background-color: black;
 }
 .parent{
     height: 100%;
@@ -118,4 +119,18 @@ body{
 i:active{
     scale: 1.2;
     transition-duration: 0.4s;
+}
+span{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 3.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    bottom: 50%;
+    left: 10.5%;
+}
+@media (min-width: 500px) {
+    .parent{
+        display: none;
+    }
 }
