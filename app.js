@@ -11,7 +11,7 @@ function imageSlider() {
       gsap.to('.image2', {
         scale: 1.5,
         y: "-850px",
-        // opacity: 0, 
+        opacity: 0, 
         duration: 1.2
       });
       gsap.to('.image2', {
@@ -26,6 +26,26 @@ function imageSlider() {
       icon1.removeEventListener('click', imageSlider);
     }
   });
-}
 
+  icon2.addEventListener('click', function(){
+    if (clickCount === 0) {
+      gsap.to('.image2', {
+        scale: 1,
+        y: "850px",
+        opacity: 0, 
+        duration: 1.2
+      });
+      gsap.to('.image2', {
+        scale: 1,
+        y: "0px",
+        duration: 1,
+        delay: 1.2
+      });
+
+      clickCount++; 
+
+      icon2.removeEventListener('click', imageSlider);
+    }
+  })
+}
 imageSlider();
